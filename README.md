@@ -286,7 +286,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
   ```
 
   ## Get events (in jpg format).. can't find vids!
-  ```json
+  ```
   POST /app/v2/device/get_event_page_list HTTP/1.1
   Host: service-event.wyze.com
   Content-Type: application/json
@@ -340,7 +340,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
   }
   ```
   ## Event insight
-  ```json
+  ```
   GET /v1/event-insight/device-stats/count?devicemac_list=&nonce=1719732254368 HTTP/1.1
   Host: ai-event-insight-api-v2.wyzecam.com
   Appid: 9319141212m2ik
@@ -364,7 +364,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
 
   ## Query Shop
   
-  ```json
+  ```
   POST /api/2024-01/graphql HTTP/2
   Host: wyzecom.myshopify.com
   Content-Type: application/json
@@ -386,7 +386,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
   ```
 
   # identity?? TBD
-  ```json
+  ```
   POST /v1/identify HTTP/2
   Host: wyze.dataplane.rudderstack.com
   Content-Type: application/json
@@ -406,7 +406,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
   {"channel":"web","context":{"app":{"name":"RudderLabs JavaScript SDK","namespace":"com.rudderlabs.javascript","version":"2.48.9"},"traits":{"is_membership":false,"nickname":""},"library":{"name":"RudderLabs JavaScript SDK","version":"2.48.9"},"userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148","os":{"name":"","version":""},"locale":"en-US","screen":{"density":3,"width":390,"height":844,"innerWidth":390,"innerHeight":753},"timezone":"GMT-0700","sessionId":1719732156816,"sessionStart":true,"campaign":{},"page":{"path":"/product-list-by-category.html","referrer":"$direct","referring_domain":"","search":"?category=1&&appinfo=wyze_ios_2.50.7&user_id=&nickname=&env=prod&ismember=0&phoneid=2FD276BF-4EBC-4FE5-BD31-3477726E7229&isShowButton=1","title":"App shop","url":"https://app-shop-prod.wyze.com/product-list-by-category.html?category=1&&appinfo=wyze_ios_2.50.7&user_id=&nickname=&env=prod&ismember=0&phoneid=2FD276BF-4EBC-4FE5-BD31-3477726E7229&isShowButton=1","tab_url":"https://app-shop-prod.wyze.com/product-list-by-category.html?category=1&&appinfo=wyze_ios_2.50.7&user_id=&nickname=&env=prod&ismember=0&phoneid=2FD276BF-4EBC-4FE5-BD31-3477726E7229&isShowButton=1","initial_referrer":"$direct","initial_referring_domain":""}},"type":"identify","messageId":"46213000-99e7-474e-8558-edb9e29e78c7","originalTimestamp":"2024-06-30T07:22:37.212Z","anonymousId":"","userId":"","integrations":{"All":true},"sentAt":"2024-06-30T07:22:37.217Z"}
   ```
   ## Account info
-  ```json
+  ```
   GET /get_user_account_info?nonce=1719732253806 HTTP/2
   Host: wyze-membership-service-v2.wyzecam.com
   Phone_id: 2FD276BF-4EBC-4FE5-BD31-3477726E7229
