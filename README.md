@@ -1,12 +1,13 @@
 # Wyze-Cam-Firmware
 Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
+![WyzeCamPan](https://github.com/CharlesTheGreat77/Wyze-Cam-Firmware/assets/27988707/322ffb1d-f218-48ee-9762-c9fe77255e2a)
 
 
 <details>
   <summary>HTTP Requests Inspection</summary>
   ## Get device info
   
-  ```json
+  ```
   POST /app/v2/device/get_device_Info HTTP/2
   Host: api.wyzecam.com
   Accept: */*
@@ -34,7 +35,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
   ```
 
   ## Data Plan request decoded
-  ```json
+  ```
   POST /v1/batch HTTP/2
   Host: wyze.dataplane.rudderstack.com
   Accept: */*
@@ -110,7 +111,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
   }
   ```
   ## API Data?? TBD
-  ```json
+  ```
   POST /api/v3/data HTTP/2
   Host: sdk.iad-03.braze.com
   Content-Type: application/json
@@ -165,7 +166,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
   ```
 
   ## credit card sync
-  ```json
+  ```
   POST /api/v3/content_cards/sync HTTP/2
   Host: sdk.iad-03.braze.com
   Content-Type: application/json
@@ -195,7 +196,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
   ```
   ## Device property list
   
-  ```json
+  ```
   POST /app/v2/device/get_property_list HTTP/2
   Host: api.wyzecam.com
   Accept: */*
@@ -232,7 +233,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
   }
   ```
   ## device actions/functions 🎯
-  ```json
+  ```
   GET /wyzeapp/cre/rule-template/collection?nonce=1719731581127&policyAttribute=&scope=APP HTTP/2
   Host: wyze-re-rule-svc.wyzecam.com
   Content-Type: application/json
@@ -254,7 +255,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
   - Don't know how to actually call these things though (response is huge)
 
   ## Rule Search ?? might be able to add something to the json request 🤷‍♂️
-  ```json
+  ```
   POST /wyzeapp/cre/rules/search HTTP/2
   Host: wyze-re-rule-svc.wyzecam.com
   Content-Type: application/json
