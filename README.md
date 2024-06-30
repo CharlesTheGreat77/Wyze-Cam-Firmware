@@ -1,5 +1,5 @@
 # Wyze-Cam-Firmware
-Waze Cam Pan Firmware sniffed from OTA for Reverse Engineering
+Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
 
 
 <details>
