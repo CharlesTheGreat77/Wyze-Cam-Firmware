@@ -5,6 +5,7 @@ Wyze Cam Pan Firmware sniffed from OTA for Reverse Engineering
 
 <details>
   <summary>HTTP Requests Inspection</summary>
+  
   ## Get device info
   
   ```
